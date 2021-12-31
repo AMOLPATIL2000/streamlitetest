@@ -1,8 +1,4 @@
-import streamlit as t
-# checkbox
-# check if the checkbox is checked
-# title of the checkbox is 'Show/Hide'
-if st.checkbox("Show/Hide"):
-   
-  # display the text if the checkbox returns True value
+import streamlit as st
+
+if st.checkbox("Show/Hide"):     
   st.text("Showing the widget")
