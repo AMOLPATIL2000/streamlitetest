@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@dkteds 
-dataprofessor
-/
-code
-Public
-Code
-Issues
-9
-Pull requests
-3
-Actions
-Projects
-Wiki
-Security
-Insights
-code/streamlit/part9/football_app.py /
-@dataprofessor
-dataprofessor Rename football_app.py to streamlit/part9/football_app.py
-Latest commit a901c27 on Oct 6, 2020
- History
- 1 contributor
-69 lines (57 sloc)  2.54 KB
-   
 import streamlit as st
 import pandas as pd
 import base64
@@ -97,16 +67,4 @@ if st.button('Intercorrelation Heatmap'):
         f, ax = plt.subplots(figsize=(7, 5))
         ax = sns.heatmap(corr, mask=mask, vmax=1, square=True)
     st.pyplot()
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+
