@@ -1,14 +1,20 @@
-import pandas as pd
 import streamlit as st
-import numpy as np
+import plotly.graph_objects as go
+
 
 st.title("Welcome to Streamlit!")
 
-st.write("Line Chart in Streamlit")
-# 10 * 2 dimensional data
-chart_data = pd.DataFrame(
-    np.random.randn(10, 2),
-    columns=[f"Col{i+1}" for i in range(2)]
+fig = go.Figure(
+    data=[go.Pie(
+        labels=['A', 'B', 'C'],
+        values=[30, 20, 50]
+    )]
+)
+fig = fig.update_traces(
+    hoverinfo='label+percent',
+    textinfo='value',
+    textfont_size=15
 )
 
-st.line_chart(chart_data)
+st.write("Pie chart in Streamlit")
+st.plotly_chart(fig)
